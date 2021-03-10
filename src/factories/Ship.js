@@ -23,7 +23,7 @@ const Ship = (name, coordinates) => {
     hits.push(coordinate);
   };
 
-  const isSunk = () => hits.every((coord) => location.includes(coord));
+  const isSunk = () => location.every((coord) => hits.includes(coord));
 
   return {
     name,
